@@ -7,8 +7,6 @@
  *= require_self
  *= require_tree . 
 */
-
-/* START_HIGHLIGHT */
 #banner {
   background: #9c9;
   padding: 10px;
@@ -35,23 +33,44 @@
   background: #141;
 
   #main {
-    margin-left: 17em;
+    margin-left: 22em;
     padding: 1em;
     background: white;
   }
 
+//#START:side
   #side {
     float: left;
     padding: 1em 2em;
     width: 13em;
     background: #141;
 
+/* START_HIGHLIGHT */
+    form, div {
+      display: inline;
+    }  
+ 
+    input {
+      font-size: small;
+    }
+
+    #cart {
+      font-size: smaller;
+      color:     white;
+
+      table {
+        border-top:    1px dotted #595;
+        border-bottom: 1px dotted #595;
+        margin-bottom: 10px;
+      }
+    }
+
+/* END_HIGHLIGHT */
     ul {
       padding: 0;
 
       li {
         list-style: none;
-          color: #bfb;
 
         a {
           color: #bfb;
@@ -60,5 +79,5 @@
       }
     }
   }
+//#END:side
 }
-/* END_HIGHLIGHT */
