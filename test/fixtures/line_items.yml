@@ -1,7 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
 
 one:
-  product_id: 1
+  product_id: ruby
+  order: one
   cart_id: 1
 
 two:
