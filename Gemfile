@@ -32,3 +32,12 @@ group :test do
   gem 'turn', :require => false
   gem 'minitest'
 end
+
+#for Heroku
+group :production, :staging do
+  gem "pg"
+end
+
+group :development, :test do
+  gem "sqlite3-ruby", "~> 1.3.0", :require => "sqlite3"
+end
