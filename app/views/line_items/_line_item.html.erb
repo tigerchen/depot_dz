@@ -7,5 +7,5 @@
   <td><%= line_item.quantity %>&times;</td>
   <td><%= line_item.product.title %></td>
   <td class="item_price"><%= number_to_currency(line_item.price) %> each</td>
-  <td><%= button_to 'Remove', line_item, method: :delete%></td>
+  <td><%= button_to 'Reduce', decrement_line_item_path(id: line_item ) %></td>
 </tr>
