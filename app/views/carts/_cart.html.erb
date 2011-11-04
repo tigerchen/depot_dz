@@ -8,6 +8,9 @@
   </tr>
 </table>
 
+<% if @creating_order != true %>
 <%= button_to "Checkout", new_order_path, method: :get %>
+<% end %>
+
 <%= button_to 'Empty cart', cart, method: :delete, 
     confirm: 'Are you sure?'%>
